@@ -12,7 +12,7 @@ function handleMessage() {
     'iPod'
   ].includes(navigator.platform);
 
-   const msg = JSON.stringify({teste: 'teste'});
+   const msg = JSON.stringify({classStatus: 'DONE'});
 
    return isIos ? window?.webkit?.messageHandlers?.ReactNativeWebView?.postMessage(msg) : window?.ReactNativeWebView?.postMessage(msg);
 
